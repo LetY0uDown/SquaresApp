@@ -1,0 +1,85 @@
+﻿<UserControl x:Class="WPFAppTest.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFAppTest.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Colorfull rounded squares!"
+                   FontSize="24" Foreground="#99AFFF"
+                   Margin="5 0 0 0"/>
+        <StackPanel Orientation="Horizontal">
+
+            <Border CornerRadius="20"
+                    Width="150" Height="150"
+                    Margin="10">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF184EB9" Offset="0.008"/>
+                        <GradientStop Color="#FF4A6FB9" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock Text="  Small&#x0a;   blue&#x0a;rounded&#x0a;  square"
+                           Foreground="#DADAFF"
+                           FontSize="20"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+
+            <Border CornerRadius="20"
+                    Width="200" Height="200"
+                    Margin="50 0 0 0">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF966666" Offset="0"/>
+                        <GradientStop Color="#FF822121" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock Text="Dark red rounded square"
+                           Foreground="#FFAAAA"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="16"/>
+            </Border>
+
+            <Border CornerRadius="20"
+                    Width="200" Height="200"
+                    Margin="50 0 0 0">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFADC1A8" Offset="0.003"/>
+                        <GradientStop Color="#FF38B317" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock Text="Green rounded square"
+                           Foreground="#AAFFAA" Margin="0 0 0 5"
+                           HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                           FontSize="18"/>
+            </Border>
+
+        </StackPanel>
+        
+        <TextBlock Text="One big rounded rectangle"
+                   Foreground="#99AFFF"
+                   FontSize="22" Margin="5 0 0 0"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Border Width="650" Height="150"
+                    CornerRadius="25"
+                    Margin="10"
+                    BorderThickness="2" BorderBrush="Magenta">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,1">
+                        <GradientStop Color="#EEEEEE"/>
+                        <GradientStop Color="#FFEEFB00" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <TextBlock Text="With magenta border!"
+                           FontSize="64" Foreground="Magenta"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+        </StackPanel>
+        
+    </StackPanel>
+</UserControl>
